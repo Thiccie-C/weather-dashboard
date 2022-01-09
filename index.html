@@ -5,9 +5,27 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="assets/css/stlye.css"/>
     </head>
+    <div class ="header">
+        <h1>Weather Dashboard</h1>
+    </div>
     <body>
-
-
+        <div class="search">
+            <form id="city-search">
+                <label for="city">Search For A City</label>
+                <input type="text" id="city"></input>
+                <button type="submit">Search</button>
+            </form>
+            
+        </div>
+        <div class="weather">
+        <div class="todays-weather">
+            <h2>Todays Weather in: <span id="city-name"></span></h2>
+            <div id="today"></div>
+        </div>
+        <div class="forecast">
+            <h2>5-Day Forecast</h2>
+        </div>
+        </div>
 
       <script src="assets/js/script.js"></script>
     </body>
