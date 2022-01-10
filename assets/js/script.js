@@ -37,21 +37,19 @@ var cityUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + data + ",us
       getWeather(lon, lat)
     })
   })
-  
 }
 var getWeather = function(lon, lat){
 var apiUrl="https://api.openweathermap.org/data/2.5/onecall?lat=" +lat + "&lon=" + lon + "&appid=cec0e7937cc29a0b1318e2f303f485a2"
 fetch(apiUrl).then(function(response) {
   response.json().then(function(data) {
     displayWeather(data, data)
-    
   });
 });
 };
 var displayWeather = function(data, city) {
   todaysWeatherContainerEl.textContent= "";
 
-
+  
   var todayEl = document.createElement("div");
   todayEl.className = "today-contents"
 
@@ -84,6 +82,9 @@ var displayWeather = function(data, city) {
   todaysWeatherContainerEl.appendChild(todayEl);
 }
 
+var forecast = function(){
+  
+}
 citySearchForm.addEventListener("submit", formSubmitHandler);
 
 //getWeather()

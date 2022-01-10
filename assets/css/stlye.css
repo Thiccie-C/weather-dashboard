@@ -59,9 +59,24 @@ body {
 #city-search{
     font-size: 30px;
 }
+#city-search input {
+    width: 75%;
+    height: 100%;
+}
 #today div{
     width: 40%
 }
 .todays-weather div {
     padding: 3px;
+}
+.todays-weather h2, .todays-weather h3{
+    justify-content: space-evenly;
+    display: inline;
+    width: 45%
+}
+.todays-weather h2 {
+    float: left;
+}
+.todays-weather h3 {
+    float: right;
 }
