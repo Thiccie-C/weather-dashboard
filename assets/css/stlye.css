@@ -5,6 +5,7 @@
     float: right;
 }
 body {
+    height: 100%;
     flex-wrap: wrap;
     display: flexbox;
 }
@@ -16,11 +17,51 @@ body {
     height: 50px;
 }
 .weather{
-    width: 100%;
+    border: 2px solid;
+    width: 77%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    float: right;
 }
 .todays-weather{
     width: 100%;
+    float: right;
+}
+.low{
+    background-color: green;
+}
+.high{
+    background-color: orange;
+}
+.moderate{
+    background-color: yellow;
+}
+.history{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+.search{
+    height: 100%;
+    float: left;
+    width: 22%;
+}
+.search button {
+    background-color: lightblue;
+    width: 70%;
+}
+.history-contents{
+    font-size: large;
+    margin: 1%;
+    width: 70%;
+    height: 40px;
+}
+#city-search{
+    font-size: 30px;
+}
+#today div{
+    width: 40%
+}
+.todays-weather div {
+    padding: 3px;
 }
